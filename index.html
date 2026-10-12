@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<!-- index.html -->
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="روزنامه‌دیواری دیجیتال زیست دهم؛ بررسی خبرهای زیستی و تنوع زیستی"
+    >
+
+    <title>نبض طبیعت | روزنامه‌دیواری زیست دهم</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- سربرگ روزنامه -->
+    <header class="site-header">
+        <div class="container">
+            <p class="eyebrow">روزنامه‌دیواری دیجیتال زیست‌شناسی</p>
+
+            <h1>نبض طبیعت</h1>
+
+            <p class="subtitle">
+                روایتی علمی از حیات، تنوع زیستی و آینده زمین
+            </p>
+
+            <nav class="main-nav" aria-label="منوی اصلی">
+                <a href="#home">صفحه اصلی</a>
+                <a href="#news">خبرها</a>
+                <a href="#statistics">آمار زیستی</a>
+                <a href="#about">درباره پروژه</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home">
+
+        <!-- خبر اصلی -->
+        <section class="hero container" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="section-label">موضوع ویژه</p>
+
+                <h2 id="hero-title">
+                    آینده تنوع زیستی در دستان ماست
+                </h2>
+
+                <p>
+                    شناخت جانداران و حفاظت از زیستگاه‌های طبیعی،
+                    بخشی مهم از درک ما از دنیای زنده است.
+                </p>
+
+                <a href="#news" class="primary-link">
+                    مطالعه خبرها
+                </a>
+            </div>
+
+            <figure class="hero-image">
+                <img
+                    src="img/forest.jpg"
+                    alt="جنگل سبز و زیستگاه طبیعی جانداران"
+                >
+                <figcaption>
+                    حفاظت از زیستگاه‌ها به حفظ تنوع زیستی کمک می‌کند.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- معرفی پروژه -->
+        <section class="introduction container" id="about">
+            <h2>چرا این روزنامه را ساختیم؟</h2>
+
+            <p>
+                هدف این پروژه، بررسی خبرهای روزنامه‌ها و وبگاه‌های خبری،
+                شناسایی خبرهای مرتبط با زیست‌شناسی و محاسبه درصد آن‌هاست.
+                اطلاعات هر خبر باید از منبع معتبر قابل بررسی باشد.
+            </p>
+        </section>
+
+        <!-- فهرست خبرها -->
+        <section class="news-section container" id="news">
+            <div class="section-heading">
+                <p class="section-label">تازه‌های دنیای زنده</p>
+                <h2>خبرهای زیستی</h2>
+            </div>
+
+            <!-- کنترل جست‌وجو -->
+            <div class="news-controls">
+                <label for="news-search">جست‌وجوی خبر</label>
+
+                <input
+                    type="search"
+                    id="news-search"
+                    placeholder="عنوان یا موضوع خبر..."
+                >
+
+                <label for="news-filter">دسته‌بندی</label>
+
+                <select id="news-filter">
+                    <option value="all">همه خبرها</option>
+                    <option value="good">خبرهای خوب</option>
+                    <option value="bad">خبرهای بد</option>
+                    <option value="other">خبرهای غیرزیستی</option>
+                </select>
+            </div>
+
+            <!-- خبر شماره یک -->
+            <article
+                class="news-card"
+                data-category="good"
+            >
+                <img
+                    src="img/turtle.jpg"
+                    alt="لاک‌پشت دریایی در آب"
+                    loading="lazy"
+                >
+
+                <div class="news-content">
+                    <p class="news-category">حفاظت از حیات‌وحش</p>
+
+                    <h3>حفاظت از لاک‌پشت‌های دریایی</h3>
+
+                    <p>
+                        حفاظت از محل تخم‌گذاری و کاهش زباله‌های پلاستیکی
+                        می‌تواند به بقای این جانوران کمک کند.
+                    </p>
+
+                    <p class="news-source">
+                        منبع:
+                        <a href="https://www.iucn.org/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            اتحادیه بین‌المللی حفاظت از طبیعت
+                        </a>
+                    </p>
+                </div>
+            </article>
+
+            <!-- خبر شماره دو -->
+            <article
+                class="news-card"
+                data-category="bad"
+            >
+                <img
+                    src="img/pollution.jpg"
+                    alt="زباله‌های پلاستیکی در محیط آبی"
+                    loading="lazy"
+                >
+
+                <div class="news-content">
+                    <p class="news-category">محیط‌زیست</p>
+
+                    <h3>آلودگی پلاستیکی آب‌ها</h3>
+
+                    <p>
+                        ورود زباله‌های پلاستیکی به محیط‌های آبی
+                        می‌تواند برای جانوران و زیستگاه‌ها زیان‌آور باشد.
+                    </p>
+
+                    <p class="news-source">
+                        منبع:
+                        <a href="https://www.unep.org/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            برنامه محیط‌زیست سازمان ملل
+                        </a>
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- آمار و درصدها -->
+        <section
+            class="statistics container"
+            id="statistics"
+            aria-labelledby="statistics-title"
+        >
+            <h2 id="statistics-title">زیست‌شناسی در آمار</h2>
+
+            <p>
+                پس از تکمیل بررسی ۱۰ خبر، تعداد واقعی هر گروه
+                را در این بخش نمایش می‌دهیم.
+            </p>
+
+            <div class="statistics-grid">
+                <article class="stat-card">
+                    <h3>کل خبرها</h3>
+                    <p id="total-news">۱۰</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>خبرهای زیستی</h3>
+                    <p id="biology-news">۰</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>درصد خبرهای زیستی</h3>
+                    <p id="biology-percent">۰٪</p>
+                </article>
+            </div>
+
+            <p class="statistics-note">
+                آمار نهایی باید بر اساس خبرهای واقعی و ثبت‌شده محاسبه شود.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- پابرگ -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>نبض طبیعت | روزنامه‌دیواری دیجیتال زیست دهم</p>
+
+            <p>
+                نام دانش‌آموز: ............
+                <span aria-hidden="true"> | </span>
+                کلاس: ............
+            </p>
+
+            <p>
+                منابع خبرها و تصاویر باید همراه با عنوان، پیوند
+                و اطلاعات مجوز استفاده درج شوند.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
